@@ -1,54 +1,135 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+
     <title>Book Archive - Search</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
 
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="assets/favImg.svg" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- Custom Style -->
     <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
+    <nav>
+        <div class="logo">
+            PACE
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a onclick="newfunction()" href=""> Services</a></li>
+            <li><a onclick="firstfunction()" href="https://textbooks.netlify.app/">textbooks</a></li>
+            <li><a href="#">quotes</a></li>
+        </ul>
+    </nav>
 
-<h1 class="text-center mt-4 mb-5 themeLetter" style="letter-spacing: 5px"> Book Archive </h1>
+    <h1 class="text-center mt-4 mb-5 themeLetter" style="letter-spacing: 5px"> Book Archive </h1>
 
-<!-- Search Book -->
-<div class="container">
-    <div class="searchBook">
-        <div class="row">
-            <div class="col-md-8 col-12 mx-auto">
-                <h2 class="themeLetter"> Search Your Favourite Book </h2>
-                <div class="input-group mb-3">
-                    <input id="searchBook" type="text" class="form-control"
-                           placeholder="Type Anything Book Name & Hit Enter"
-                           aria-label="Search Your Favourite Book" aria-describedby="searchBtn">
-                    <button class="btn" type="button" id="searchBtn" onclick="bookSearch()">
-                        Search
-                    </button>
+    <!-- Search Book -->
+    <div class="container">
+        <div class="searchBook">
+            <div class="row">
+                <div class="col-md-8 col-12 mx-auto">
+                    <h2 class="themeLetter"> Search Your Favourite Book </h2>
+                    <div class="input-group mb-3">
+                        <input id="searchBook" type="text" class="form-control"
+                            placeholder="Type Anything Book Name & Hit Enter" aria-label="Search Your Favourite Book"
+                            aria-describedby="searchBtn">
+                        <button class="btn" type="button" id="searchBtn" onclick="bookSearch()">
+                            Search
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="searchInfo" id="resultInfo"></div>
+        <div class="row" id="bookResult"></div>
     </div>
+    <div class="refer">
+        <div>
+            <img src="1hary.jpg" alt="the book by J. K. Rowling" width="250" height="250"><br>
+            <a href="https://anylang.net/en/books/en/harry-potter-and-philosophers-stone/read">Preiview</a>
+        </div>
 
-    <div class="searchInfo" id="resultInfo"></div>
-    <div class="row" id="bookResult"></div>
-</div>
+        <div>
+            <img src="annie.jpg" alt="Description for image" width="250" height="250"><br>
+            <a href="https://www.gutenberg.org/files/45/45-h/45-h.htm#link2HCH0001">Preiview</a>
+        </div>
+        <div>
+            <img src="hero.jpg" alt="Description for image" width="250" height="250"><br>
+            <a
+                href="https://read.amazon.in/kp/embed?asin=B00OYTQ6HO&ref=x_gr_w_preview_kcr_in-21&tag=x_gr_w_preview_kcr_in-21&preview=inline">
+                Preiview</a>
+        </div>
 
-<!-- // Script // -->
-<!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+
+        <div  class="total">
+        <div style="margin-top: 350px;position:absolute;left:0;margin-left:43px">
+          
+            <img src="dc.jpg" alt="the book by J. K. Rowling" width="250" height="250"><br>
+            <a href="https://drive.google.com/file/d/1DpHQQ1Ed93FaA4dPoPmz9eK4xEwT1cQG/view?usp=drivesdk">Preiview</a>
+        </div>
+
+        <div style="margin-top: 350px;position:absolute;left:0;margin-left:450px">
+            <img src="os.jpg" alt="Description for image" width="250" height="250"><br>
+            <a href="https://drive.google.com/file/d/1DpyDe0Y6-8XCClx1VkVr1RLZ2QX6ZViV/view?usp=drivesdk">Preiview</a>
+        </div>
+        <div style="margin-top: 350px;position:absolute;left:0;margin-left:900px">
+            <img src="java.jpg" alt="Description for image" width="250" height="250"><br>
+            <a
+                href="https://drive.google.com/file/d/1DltpaC2pRv0stcbbYXAjVFqy7E0YlYO4/view?usp=drivesdk">Preiview</a>
+        </div>
+    </div>
+        <h3>
+
+        </h3>
+    </div>
+    <!-- // Script // -->
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
-<!-- Custom -->
-<script src="assets/app.js"></script>
+    <!-- Custom -->
+    <script src="assets/app.js"></script>
 </body>
+
 </html>
+<style>
+    .refer a {
+        width: 100px;
+        background: rgb(58, 115, 228);
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        position: absolute;
+
+    }
+</style>

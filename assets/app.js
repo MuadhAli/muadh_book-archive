@@ -141,3 +141,9 @@ const dispalyBookresult = (books, totalFound) => {
         `;
     }
 }
+function newfunction(){
+    alert('u clicked services')
+}
+function firstfunction(){
+    alert('u clicked services')
+}
