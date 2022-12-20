@@ -147,3 +147,6 @@ function newfunction(){
 function firstfunction(){
     alert('u clicked services')
 }
+function secondfunction(){
+    alert('you will open the website which is made by rabeeh an muadh')
+}
